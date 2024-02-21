@@ -1,0 +1,20 @@
+{
+  "name": "points-of-interest-map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/points-of-interest-map.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "@diasfs/proximity-search": "^1.0.0",
+    "haversine-geolocation": "^1.6.0",
+    "leaflet": "^1.9.4"
+  }
+}

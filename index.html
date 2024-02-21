@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="points-of-interest" data-lat="-30.0321398" data-lng="-51.209511" >
+      <h2>Conveniências</h2>
+      <ul class="locais">
+      </ul>
+      <div class="map" style="width:100%;height:500px"></div>
+
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="dist/points-of-interest-map.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="dist/points-of-interest-map.js"></script>
+    <script type="module">
+      window.PointsOfInterestMap({
+        selector: '.points-of-interest',
+        i18n: {
+          "amenity:arts_centre": "Centro Artístico",
+          "aeroway:aerodrome": "Aeroporto",
+          "amenity:atm": "Caixa Eletrônico",
+          "amenity:bank": "Banco",
+          "amenity:bar": "Bar",
+          "amenity:bus_station": "Estação de Ônibus",
+          "amenity:cafe": 'Café',
+          "amenity:car_wash": "Lavagem de Carro",
+          "amenity:grave_yard": "Cemitério",
+          "amenity:pharmacy": "Farmácia",
+          "amenity:hospital": "Hospital",
+          "amenity:library": "Biblioteca",
+          "amenity:post_depot": "Depósito",
+          "amenity:nightclub": "Clube Noturno",
+          "amenity:parking": "Estacionamento",
+          "amenity:police": "Polícia",
+          "amenity:post_office": "Correios",
+          "amenity:school": "Escola",
+          "amenity:childcare": "Creche",
+          "amenity:university": "Universidade",
+          "amenity:restaurant": "Restaurante",
+          "amenity:fuel": "Posto de Combustível",
+          "craft:bakery": "Padaria",
+          "shop:beauty": "Salão de Beleza",
+          "shop:books": "Livraria",
+          "shop:convenience": "Loja de Conveniência",
+          "shop:chemist": "Farmácia",
+          "shop:pet": "Pet Shop",
+          "shop:mall": "Mercado",
+          "shop:supermarket": "Supermercado",
+          "landuse:cemetery": "Cemitério",
+          "building:church": "Igreja",
+          "building:stadium": "Estádio",
+          "leisure:fitness_centre": "Academia",
+          "leisure:sports_centre": "Centro Esportivo",
+          "leisure:park": "Parque",
+          "leisure:stadium": "Estádio",
+          "tourism:museum": "Museu",
+          "tourism:attraction": "Atração Turística",
+          "public_transport:station": "Transporte Público"
+        }
+      })
+    </script>
+  </body>
+</html>
