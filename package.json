@@ -1,7 +1,7 @@
 {
   "name": "points-of-interest-map",
   "private": true,
-  "version": "0.0.0",
+  "version": "v1.0.0",
   "type": "module",
   "main": "dist/points-of-interest-map.js",
   "scripts": {
